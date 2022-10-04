@@ -4,7 +4,7 @@ import java.io.IOException;
 
 public abstract class CaffeineBeverageWithHook {
 
-    final void prepareRecipe() {
+    final void prepareRecipe() throws IOException {
         boilWater();
         brew();
         pourInCup();
