@@ -3,6 +3,7 @@ package observerPattern;
 import java.util.ArrayList;
 import java.util.List;
 
+// 주제 인터페이스를 구현하는 날씨 정보 클래스
 public class WeatherData implements Subject {
 
     private List<Observer> observers;
