@@ -1,12 +1,12 @@
 package factoryPattern;
 
-public interface Pizza {
+public abstract class Pizza {
 
-    public void prepare();
+    public void prepare(){};
 
-    public void bake();
+    public void bake(){};
 
-    public void cut();
+    public void cut(){};
 
-    public void box();
+    public void box(){};
 }

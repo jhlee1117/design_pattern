@@ -1,23 +1,5 @@
 package factoryPattern;
 
-public class CheesePizza implements Pizza {
-    @Override
-    public void prepare() {
+public class CheesePizza extends Pizza {
 
-    }
-
-    @Override
-    public void bake() {
-
-    }
-
-    @Override
-    public void cut() {
-
-    }
-
-    @Override
-    public void box() {
-
-    }
 }
