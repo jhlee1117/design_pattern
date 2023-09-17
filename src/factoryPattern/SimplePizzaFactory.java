@@ -1,3 +1,4 @@
+/*
 package factoryPattern;
 
 public class SimplePizzaFactory {
@@ -25,3 +26,4 @@ public class SimplePizzaFactory {
         return pizza;
     }
 }
+*/
