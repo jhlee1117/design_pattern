@@ -1,5 +1,5 @@
 package strategyPattern;
 
-public interface QuackBehavior {
+public interface QuackBehavior extends Behavior {
     public void quack();
 }

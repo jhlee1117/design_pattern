@@ -2,6 +2,8 @@ package strategyPattern;
 
 public class MallardDuck extends Duck {
 
+    public MallardDuck duck = new MallardDuck();
+
     public MallardDuck() {
         quackBehavior = new Quack();
         flyBehavior = new FlyWithWings();

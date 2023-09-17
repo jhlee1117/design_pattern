@@ -28,7 +28,8 @@ public class WeatherData implements Subject {
     @Override
     public void notifyObservers() {
         for (Observer observer : observers) {
-            observer.update(temperature, humidity, pressure);
+//            observer.update(temperature, humidity, pressure);
+            observer.update();
         }
     }
 
@@ -43,5 +44,14 @@ public class WeatherData implements Subject {
         this.humidity = humidity;
         this.pressure = pressure;
         measurementsChanged();
+    }
+
+    // 푸시 방식에서 풀 방식을 바꿀 경우, 옵저버가 온도 및 습도 데이터를 직접 가져올 수 있도록 함
+    public float getTemperature() {
+        return temperature;
+    }
+
+    public float getHumidity() {
+        return humidity;
     }
 }
